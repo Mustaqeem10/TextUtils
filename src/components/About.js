@@ -7,7 +7,7 @@ export default function About(props) {
             <h1 style={{color: props.mode === 'dark' ? 'white' : 'black'}} className='text-center'>About Us</h1>
                 <div className="accordion" id="accordionExample">
 
-                    <div className="accordion-item" style={{backgroundColor: props.mode === 'dark' ? '#282848' : 'white', color: props.mode === 'dark' ? 'white' : 'black'}}>
+                    <div className="accordion-item">
                         <h2 className="accordion-header" id="headingOne">
                             <button style={{backgroundColor: props.mode === 'dark' ? '#282848' : 'white', color: props.mode === 'dark' ? 'white' : 'black'}} className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 Accordion Item #1
