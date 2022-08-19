@@ -51,7 +51,10 @@ export default function TextForm(props){
     const countCharacters = (event) => {
         let words = event.target.value;   
         let sent = words.split(/[.]/);
-        setSentences(sent.length);
+        let newSent = sent.filter((elm) => {
+                return elm !== "";
+            });
+        setSentences(newSent.length);
         setCharacters(words.length);
         words = words.trim();
         let arr = (words.split(/\s+/));
